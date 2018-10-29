@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Have you ever had a website like this?</title>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://use.typekit.net/dcf1ame.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang|Poiret+One|Rock+Salt|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+body { margin:0; width: 1250px;}
+
+    *h1{font-family: "source-han-serif-korean",serif;}
+    h1{font-family: "garamond", serif;}
+    h1{font-size: 1.2em; line-height:1.7; font-weight: 800; color: blue;}
+    h2{font-size: 1.2em; line-height: 2; font-weight: 300; color: white; text-align: center; font-family: 'Noto Serif KR', sans-serif;}
+
+#blackwaves { position: absolute;}
+
+#logo {width: 690px; position:absolute; left: 400px; top: 20px;animation: logo 1s ease-in-out infinite;}
+@keyframes logo {
+	from{transform: rotateX(0deg); top: 20px;}
+	to{transform: rotateX(180deg); top: 250px;}
+}
+#logo2 {width: 690px; position:absolute; left: 400px; top: 20px; animation: logo2 1s ease-in-out infinite; animation-delay: 0.5s}
+@keyframes logo2 {
+	from{transform: rotateX(0deg); top: 20px;}
+	to{transform: rotateX(180deg); top: 250px;}
+}
+#logo3 {width: 690px; position:absolute; left: 400px; top: 20px;}
+
+/*.box {width: 200px; height: 200px; 
+			position: absolute;
+			border: 2px solid #353535; 
+			opacity: 1; 
+			transition: all 1s ease;
+			transform: scale(0);
+			cursor: grab;}
+.box .topBox {width:inherit; height: 20px; 
+			position: absolute; 
+			border-bottom: 2px solid #353535;}
+.box .topBox .round {width:10px; height: 10px; 
+					border-radius: 50%;
+					border: 2px solid #353535;
+					box-sizing: border-box;
+					display: inline-block;
+					margin-left: 5px;}
+.box .bottomBox {width:200px; height: 180px; 
+						position: absolute; top: 20px;}
+.box9 {width: 120px; height: 120px; top:160px; left: -100px; z-index: 13;}
+
+#bd {width: 60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); cursor: pointer; animation: popo 1.5s ease infinite alternate;}*/
+
+#homework {position: absolute; left: 580px; top:2200px; width: 400px;}
+
+
+#date {width: 230px; position: absolute; left: 220px; top: 60px;}
+
+#drawing {width: 300px; position: absolute; left: 650px; top: 880px;}
+
+#line {width: 710px; height: 250px; position: absolute; left: 380px; top: 130px; animation: line 1.4s infinite;}
+@keyframes line{
+	0%{opacity: 0.3;}
+	80%{opacity: 1;}
+	100%{opacity: 0.3;}
+}
+
+#less {width: 400px; position: absolute; left: -50px; top: 200px;}
+#more {width: 500px; position: absolute; left: 830px; top: 1400px;}
+
+#face {width: 600px; position: absolute; left: -100px; top: 1380px;}
+#dollar {width: 650px; position: absolute; left: 80px; top: 1700px;}
+
+#halloween {width: 450px; position: absolute; left: 380px; top: 430px;}
+#halloween2 {width: 300px; position: absolute; left: 50%; top: 50%;}
+
+#water {width: 580px; position: absolute; left:40px; top: 580px; }
+#wally {width: 500px; position: absolute; left:450px; top: 700px; }
+#mommyson {width: 250px; position: absolute; left:1100px; top: 480px; }
+#onescroll {width: 220px; position: absolute; left:150px; top: 800px;}
+#generation {width: 370px; position: absolute; left:550px; top: 1100px;}
+#fashion {width: 400px; position: absolute; left:200px; top: 1180px;}
+#flag {width: 300px; position: absolute; left:900px; top: 620px;}
+#pig {width: 450px; position: absolute; left:800px; top: 1000px;}
+
+#n1{width: 0px; position: absolute; left: 440px; top: 380px;}
+
+.hovereffect .image {display: opacity;transform: scale(1.2); transition: 0.5s ease;}
+.hovereffect:hover>.image {transform: scale(1); filter: blur(2px); opacity:0.4;}
+.hovereffect .txt {color: white; font-size:1.2em; top: 50%; left: 50% text-align:center; line-height: 1.7; position: absolute; top: 20px; left: 20px; height: 100%; width: 100%;opacity: 0; overflow: hidden;transform: scale(2); transition: 0.3s ease; }
+.hovereffect:hover .txt{background-color: rgba(195,193,149,0); transform: scale(1); opacity:1;}
+.hovereffect .txt h3{font-size:1.3em; margin: 120px 0 10px 0; text-align: center; font-weight: 900;}
+.hovereffect .txt h4{font-size:1.0em; margin: 30px 0 10px 0; text-align: center; font-weight: 700;}
+
+
+
+p.typing-txt{display: none; position: absolute;}
+
+    .typing {  
+      position: absolute;
+      display: block; 
+      animation: cursor 7s ease-in-out forwards;
+    } 
+    @keyframes cursor{ 
+      0%{border-right: 1px solid #fff} 
+      50%{border-right: 1px solid #000} 
+      100%{border-right: 1px solid #fff} 
+    }
+    
+    #name2 {width: 40px; height: 100px; position: absolute;animation: slide_ 1.2s forwards}
+
+    span{color: white;}
+    span:hover {color: red;}
+/*<div id="graph"><img src="./img/graph.png" style="height: 1000px; width: 350px;"></div>
+</style>
+</head>
+
+<body>
+	<div id="hallo"></div>
+
+	<div id="blackwaves"><img src="./img/waves.gif" style="width: 1519px; top: 0px;"></div>
+	<div id="blackwaves"><img src="./img/waves.gif" style="position: absolute; width: 1519px; transform: rotateX(180deg); top: 900px;"></div>
+
+	<img src="./img/line3.gif" id="line">
+
+	<img src="./img/less.gif" id="less">
+	<img src="./img/more.gif" id="more">
+
+	<img src="./img/logo.png" id="logo3">
+	<img src="./img/logo.png" id="logo">
+	<img src="./img/logo.png" id="logo2">
+
+	<img src="./img/date.png" id="date">
+	<img src="./img/drawing.gif" id="drawing">
+
+	<img src="./img/face.gif" id="face">
+	<img src="./img/face.gif" id="face" style="left:-200px; top: 1100px;">
+	<img src="./img/dollar3.gif" id="dollar">
+	
+		<img src="./img/water.png" id="water" draggable="false">
+		<img src="./img/wally.png" id="wally" draggable="false">
+		<img src="./img/mommyson.png" id="mommyson" draggable="false"> 
+		<img src="./img/onescroll.png" id="onescroll" draggable="false">
+		<img src="./img/88.png" id="generation" draggable="false">
+		<img src="./img/1960.png" id="fashion" draggable="false">
+		<img src="./img/flag.png" id="flag" draggable="false">
+		<img src="./img/pig.png" id="pig" draggable="false">
+	
+	<img id="new1" src="./img/halloween.jpg">
+	<div id="halloclicked"></div>
+
+	<div id="hallowindow">
+		<img src="./img/halloween.png" id="halloween">
+	</div>
+
+	<script type="text/javascript">
+		halloclicked.style.visibility="hidden";
+		new1.style.visibility="hidden";
+
+	hallo.onclick=function(){
+
+		halloclicked.style.visibility="visible";
+		new1.style.visibility="visible"
+
+		dragplz.play();
+}
+
+	dragElement(document.getElementById("halloween"));
+	dragElement(document.getElementById("water"));
+	dragElement(document.getElementById("wally"));
+	dragElement(document.getElementById("mommyson"));
+	dragElement(document.getElementById("onescroll"));
+	dragElement(document.getElementById("fashion"));
+	dragElement(document.getElementById("generation"));
+	dragElement(document.getElementById("flag"));
+	dragElement(document.getElementById("pig"));
+
+			function dragElement(elmnt) {
+		  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+		  if (document.getElementById(elmnt.id + "wrap")) {
+		    document.getElementById(elmnt.id + "wrap").onmousedown = dragMouseDown;
+		  } else {
+		    elmnt.onmousedown = dragMouseDown;
+		  }
+
+		  function dragMouseDown(e) {
+		    e = e || window.event;
+		    e.preventDefault();
+		    pos3 = e.clientX;
+		    pos4 = e.clientY;
+		    document.onmouseup = closeDragElement;
+		    document.onmousemove = elementDrag;
+		  }
+
+		  function elementDrag(e) {
+		    e = e || window.event;
+		    e.preventDefault();
+		    pos1 = pos3 - e.clientX;
+		    pos2 = pos4 - e.clientY;
+		    pos3 = e.clientX;
+		    pos4 = e.clientY;
+		    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+		    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		  }
+
+		  function closeDragElement() {
+		    document.onmouseup = null;
+		    document.onmousemove = null;
+		  }
+		}
+
+		tongue.onclick=function(){
+			tadah.play();
+			tongue.style.visibility="hidden";
+		}
+
+	var r = "off";
+
+			function p(){
+				if (r == "off") {
+					bd.setAttribute("src","bd2.png")
+					bd.style.width = "65px";
+					punch.play();
+					r = "on";
+				}else {
+					bd.setAttribute("src","bd.png")
+					bd.style.width = "60px";
+					punch.pause();
+					r = "off"
+				}
+				
+			}
+
+	</script>
+
+	<div id="name2"></div>
+
+    <p class="typing-txt" style="height: 400px;">It's a website where you can see how much Americano, canned coffee and snacks you've made while introducing my website. As a typical example, at the time of the 'Halloween' website, i ate a total of 10 Americanos and two bags of chocolate cookies. The items used during the production of the website have been priced. Sadly, however, i never sell 'flag' web sites. I don't want to be like the one who sold Korea to Japan or the one who sold Jesus Christ.;( Hmmmmmmm...It's a website where you can see how much Americano, canned coffee and snacks you've made while introducing my website. As a typical example, at the time of the 'Halloween' website, i ate a total of 10 Americanos and two bags of chocolate cookies. The items used during the production of the website have been priced. Sadly, however, i never sell 'flag' web sites. I don't want to be like the one who sold Korea to Japan or the one who sold Jesus Christ.;( Hmmmmmmm...</p> 
+	  <p class="typing" style="left:1200px; top: 40px; color: white; font-weight: 6400; font-family: 'Rock Salt', cursive;"></p>
+
+	  <script> 
+	    var typingBool = false; 
+	    var typingIdx=0; 
+	    var typingTxt = $(".typing-txt").text(); 
+	    typingTxt=typingTxt.split("");  
+	    if(typingBool==false){  
+	       typingBool=true; 
+	       
+	       var tyInt = setInterval(typing,100); 
+	     } 
+	     
+	     function typing(){ 
+	       if(typingIdx<typingTxt.length){ 
+	         $(".typing").append(typingTxt[typingIdx]); 
+	         typingIdx++; 
+	       } else{ 
+	         clearInterval(tyInt); 
+	       } 
+	     }   
+	  </script> 
+
+	  <div id="name2"></div>
+
+    <p class="typing-txt" style="height: 400px;"></p> 
+	  <p class="typing" style="left:700px; top: 1900px; color: red; font-weight: 900; line-height: 1.7;font-family: 'Poiret One', cursive;"></p>
+
+	  <script> 
+	    var typingBool = false; 
+	    var typingIdx=0; 
+	    var typingTxt = $(".typing-txt").text(); 
+	    typingTxt=typingTxt.split("");  
+	    if(typingBool==false){  
+	       typingBool=true; 
+	       
+	       var tyInt = setInterval(typing,40); 
+	     } 
+	     
+	     function typing(){ 
+	       if(typingIdx<typingTxt.length){ 
+	         $(".typing").append(typingTxt[typingIdx]); 
+	         typingIdx++; 
+	       } else{ 
+	         clearInterval(tyInt); 
+	       } 
+	     }   
+	  </script> 
+
+	  <div id="homework"><h2><span>"탁월한 능력은 새로운 과제를 만날 때마다 <br>스스로 발전하고 드러난다." <br><br>- 발타사르 그라시안 -</span></h2></div>
+
+
+</body>
+</html>
